@@ -44,13 +44,13 @@ include('config.php');
         <table>
             <tr>
                 <td><label for="merk">Merk</label></td>
-                <td><input type="text" id="merk" name="merk" placeholder="Merk"></td>
+                <td><input type="text" id="merk" name="merk" placeholder="Merk" required></td>
             </tr>
             <tr>
                 <td><label for="variety">Variety :</label></td>
                 <td>
 
-                    <select name="variety" id="variety">
+                    <select name="variety" id="variety" required>
                         <option value="Beras Kencur">Beras Kencur</option>
                         <option value="Kunyit Asam">Kunyit Asam</option>
                         <option value="Temulawak">Temulawak</option>
@@ -63,11 +63,11 @@ include('config.php');
             </tr>
             <tr>
                 <td><label for="stock">Stock</label></td>
-                <td><input type="number" min="0" id="stock" name="stock" placeholder="Stock"></td>
+                <td><input type="number" min="0" id="stock" name="stock" placeholder="Stock" required></td>
             </tr>
             <tr>
                 <td><label for="price">Price</label></td>
-                <td><input type="number" min="0" id="price" name="price" placeholder="Price"></td>
+                <td><input type="number" min="0" id="price" name="price" placeholder="Price" required></td>
             </tr>
             <tr>
                 <td><button type="submit" name="submit" class="btn btn-primary">Add Item</button></td>

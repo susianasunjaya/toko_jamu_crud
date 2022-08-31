@@ -72,56 +72,56 @@ while ($data = mysqli_fetch_array($result)) {
             <input type="hidden" name="id" value=<?php echo $id; ?>>
             <tr>
                 <td><label for="merk">Merk</label></td>
-                <td><input type="text" id="merk" name="merk" placeholder="Merk" value="<?php echo $merk ?>"></td>
+                <td><input type="text" id="merk" name="merk" placeholder="Merk" value="<?php echo $merk ?>" required></td>
             </tr>
             <tr>
                 <td><label for="variety">Variety :</label></td>
                 <td>
-                    <select name="variety" id="variety">
-                    <?php if ($variety == "Beras Kencur") { ?>
-                        <option value="Beras Kencur" selected>Beras Kencur</option>
-                        <option value="Kunyit Asam">Kunyit Asam</option>
-                        <option value="Temulawak">Temulawak</option>
-                        <option value="Galian Singset">Galian Singset</option>
-                        <option value="Brotowali">Brotowali</option>
-                        <option value="Others">Others</option>
-                    <?php } elseif ($variety == "Kunyit Asam") { ?>
-                        <option value="Beras Kencur">Beras Kencur</option>
-                        <option value="Kunyit Asam" selected>Kunyit Asam</option>
-                        <option value="Temulawak">Temulawak</option>
-                        <option value="Galian Singset">Galian Singset</option>
-                        <option value="Brotowali">Brotowali</option>
-                        <option value="Others">Others</option>
-                    <?php } elseif ($variety == "Temulawak") { ?>
-                        <option value="Beras Kencur">Beras Kencur</option>
-                        <option value="Kunyit Asam">Kunyit Asam</option>
-                        <option value="Temulawak" selected>Temulawak</option>
-                        <option value="Galian Singset">Galian Singset</option>
-                        <option value="Brotowali">Brotowali</option>
-                        <option value="Others">Others</option>
-                    <?php } elseif ($variety == "Galian Singset") { ?>
-                        <option value="Beras Kencur">Beras Kencur</option>
-                        <option value="Kunyit Asam">Kunyit Asam</option>
-                        <option value="Temulawak">Temulawak</option>
-                        <option value="Galian Singset" selected>Galian Singset</option>
-                        <option value="Brotowali">Brotowali</option>
-                        <option value="Others">Others</option>
-                    <?php } elseif ($variety == "Brotowali") { ?>
-                        <option value="Beras Kencur">Beras Kencur</option>
-                        <option value="Kunyit Asam">Kunyit Asam</option>
-                        <option value="Temulawak">Temulawak</option>
-                        <option value="Galian Singset">Galian Singset</option>
-                        <option value="Brotowali" selected>Brotowali</option>
-                        <option value="Others">Others</option>
-                    <?php } elseif ($variety == "Others") { ?>
-                        <option value="Beras Kencur">Beras Kencur</option>
-                        <option value="Kunyit Asam">Kunyit Asam</option>
-                        <option value="Temulawak">Temulawak</option>
-                        <option value="Galian Singset">Galian Singset</option>
-                        <option value="Brotowali">Brotowali</option>
-                        <option value="Others" selected>Others</option>
+                    <select name="variety" id="variety" required>
+                        <?php if ($variety == "Beras Kencur") { ?>
+                            <option value="Beras Kencur" selected>Beras Kencur</option>
+                            <option value="Kunyit Asam">Kunyit Asam</option>
+                            <option value="Temulawak">Temulawak</option>
+                            <option value="Galian Singset">Galian Singset</option>
+                            <option value="Brotowali">Brotowali</option>
+                            <option value="Others">Others</option>
+                        <?php } elseif ($variety == "Kunyit Asam") { ?>
+                            <option value="Beras Kencur">Beras Kencur</option>
+                            <option value="Kunyit Asam" selected>Kunyit Asam</option>
+                            <option value="Temulawak">Temulawak</option>
+                            <option value="Galian Singset">Galian Singset</option>
+                            <option value="Brotowali">Brotowali</option>
+                            <option value="Others">Others</option>
+                        <?php } elseif ($variety == "Temulawak") { ?>
+                            <option value="Beras Kencur">Beras Kencur</option>
+                            <option value="Kunyit Asam">Kunyit Asam</option>
+                            <option value="Temulawak" selected>Temulawak</option>
+                            <option value="Galian Singset">Galian Singset</option>
+                            <option value="Brotowali">Brotowali</option>
+                            <option value="Others">Others</option>
+                        <?php } elseif ($variety == "Galian Singset") { ?>
+                            <option value="Beras Kencur">Beras Kencur</option>
+                            <option value="Kunyit Asam">Kunyit Asam</option>
+                            <option value="Temulawak">Temulawak</option>
+                            <option value="Galian Singset" selected>Galian Singset</option>
+                            <option value="Brotowali">Brotowali</option>
+                            <option value="Others">Others</option>
+                        <?php } elseif ($variety == "Brotowali") { ?>
+                            <option value="Beras Kencur">Beras Kencur</option>
+                            <option value="Kunyit Asam">Kunyit Asam</option>
+                            <option value="Temulawak">Temulawak</option>
+                            <option value="Galian Singset">Galian Singset</option>
+                            <option value="Brotowali" selected>Brotowali</option>
+                            <option value="Others">Others</option>
+                        <?php } elseif ($variety == "Others") { ?>
+                            <option value="Beras Kencur">Beras Kencur</option>
+                            <option value="Kunyit Asam">Kunyit Asam</option>
+                            <option value="Temulawak">Temulawak</option>
+                            <option value="Galian Singset">Galian Singset</option>
+                            <option value="Brotowali">Brotowali</option>
+                            <option value="Others" selected>Others</option>
 
-                    <?php } ?>
+                        <?php } ?>
 
 
 
@@ -130,11 +130,11 @@ while ($data = mysqli_fetch_array($result)) {
             </tr>
             <tr>
                 <td><label for="stock">Stock</label></td>
-                <td><input type="number" min="0" id="stock" name="stock" placeholder="Stock" value="<?php echo $stock ?>"></td>
+                <td><input type="number" min="0" id="stock" name="stock" placeholder="Stock" value="<?php echo $stock ?>" required></td>
             </tr>
             <tr>
                 <td><label for="price">Price</label></td>
-                <td><input type="number" min="0" id="price" name="price" placeholder="Price" value="<?php echo $price ?>"></td>
+                <td><input type="number" min="0" id="price" name="price" placeholder="Price" value="<?php echo $price ?>" required></td>
             </tr>
             <tr>
                 <td><button type="submit" name="update" class="btn btn-primary">Update Item</button></td>
